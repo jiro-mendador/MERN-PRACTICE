@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "formidable": "^3.5.1",
+    "mongodb": "^6.5.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.12",
+    "upper-case": "^3.0.0"
+  }
+}

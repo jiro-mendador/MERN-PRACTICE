@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MONGODB NODEJS | CRUD</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 1em;
+      }
+
+      form,
+      table {
+        width: clamp(0px, 100%, 700px);
+        overflow: auto;
+      }
+
+      table,
+      th,
+      td {
+        border-collapse: collapse; /*to remove double borders*/
+      }
+
+      td:last-child {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1em;
+      }
+
+      td:last-child input {
+        padding: 0.7em;
+        border-radius: 10px;
+        border: none;
+        width: clamp(0px, 100%, 5em);
+      }
+
+      td:last-child input:first-child {
+        background-color: lightskyblue;
+        color: lightcyan;
+      }
+
+      td:last-child input:last-child {
+        background-color: lightpink;
+        color: red;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 1em 0.5em;
+      }
+
+      tr {
+        color: #0e0e0e;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:hover:not(:first-child) {
+        background-color: #61bdf7;
+        color: white;
+      }
+
+      td:not(:last-child) > input {
+        border: none;
+        background-color: transparent;
+        font-size: 1em;
+        pointer-events: none;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MONGODB CRUD</h1>
+    <form
+      name="outputs"
+      action="./"
+      method="POST"
+      enctype="application/x-www-form-urlencoded"
+      class="output"
+    >
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Course</th>
+          <th>Year</th>
+          <th>Section</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="id" value="5" readonly />
+          </td>
+          <td><input type="text" name="firtName" value="Jiro" readonly /></td>
+          <td>
+            <input type="text" name="lastName" value="Mendador" readonly />
+          </td>
+          <td><input type="text" name="course" value="BSCS" readonly /></td>
+          <td><input type="text" name="year" value="3" readonly /></td>
+          <td><input type="text" name="section" value="A" readonly /></td>
+          <td>
+            <input type="submit" value="EDIT" name="edit" />
+            <input type="submit" value="DELETE" name="delete" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

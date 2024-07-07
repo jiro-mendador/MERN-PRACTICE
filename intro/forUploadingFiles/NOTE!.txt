@@ -1,0 +1,12 @@
+WHEN INSTALLING NODE AND U ENCOUNTER 
+The term node is not recognized as the name of a cmdlet, function, script file, or operable program
+
+JUST EDIT YOUR ENVIRONMENT VARIABLE TO THE INSTALLATION PATH OF YOUR NODE.JS
+Search Environment Variables > 
+Click Environment Variables > 
+Select Path > 
+Click Edit > 
+Click New >
+Locate the installation path of your node.js then copy the path >
+paste > click ok/apply > restart IDE
+ 
